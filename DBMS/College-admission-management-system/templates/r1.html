@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Page</title>
+  <style>
+    body {
+      background: skyblue;
+    }
+    h1 {
+      color: #9332ab;
+    }
+    .formgroup {
+      background: lightgreen;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 400px;
+      margin: auto;
+    }
+    .formgroup label {
+      color: black;
+      display: block;
+      margin: 10px 0 5px;
+    }
+    .formgroup select {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      background-color: lightgrey;
+    }
+    .formgroup input[type='submit'] {
+      margin: 10px;
+      width: 100px;
+      height: 30px;
+      font-size: 20px;
+    }
+    .formgroup input[type='number'] {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      background-color: lightgrey;
+    }
+  </style>
+</head>
+<body>
+  <form class="myform" action="/reg" method="POST">
+    <h1 style="text-align: center;">Your Services</h1>
+    <div class="formgroup">
+
+      <label>MUT ID</label>
+      <input type="text" name="name" placeholder="Enter your MUT ID" required>        
+      
+      <label>Service</label>
+      <select name="father">
+        <option value="Print">Print</option>
+        <option value="Photostat">Photostat</option>
+      </select>
+      
+      <label>Print Type</label>
+      <select name="num">
+        <option value="Black and White">Black and White</option>
+        <option value="Colour">Colour</option>
+      </select>
+      
+      <label>Print Size</label>
+      <select name="email">
+        <option value="A4">A4</option>
+        <option value="Legal">Legal</option>
+      </select>
+      
+      <label>Print Option</label>
+      <select name="rank">
+        <option value="Single Side">Single Side</option>
+        <option value="Double Side">Double Side</option>
+      </select>
+      
+      <label>No of Copies</label>
+      <input type="number" name="telephone" placeholder="Enter no of copies" required>
+
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</body>
+</html>
